@@ -1042,7 +1042,7 @@ namespace weiss.Collections.Generic
 
         public SortedDictionary( )
         {
-            nullNode = new AANode( KeyType.default, ValueType.default, null, null );
+            nullNode = new AANode( default(KeyType), default(ValueType), null, null );
             nullNode.left = nullNode.right = nullNode;
             nullNode.level = 0;
             root = nullNode;
@@ -1080,7 +1080,7 @@ namespace weiss.Collections.Generic
         private AANode Find( KeyType key )
         {
             AANode current = root;
-            nullNode.element = new KeyValuePair<KeyType, ValueType>( key, ValueType.default );
+            nullNode.element = new KeyValuePair<KeyType, ValueType>( key, default(ValueType) );
 
             for( ; ; )
             {

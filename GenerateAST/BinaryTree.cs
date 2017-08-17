@@ -16,7 +16,7 @@ using System;
 
 public class BinaryNode<AnyType>
 {
-    public BinaryNode( ) : this( AnyType.default, null, null )
+    public BinaryNode( ) : this( default(AnyType), null, null )
     {
     }
 
@@ -48,11 +48,26 @@ public class BinaryNode<AnyType>
     // Print tree rooted at current node using preorder traversal.
     public void PrintPreOrder( )
     {
-        Console.WriteLine( element );        // Node
-        if( left != null )
-            left.PrintPreOrder( );           // Left
-        if( right != null )
-            right.PrintPreOrder( );          // Right
+        if (left != null)
+        Console.Write("( ");// s-expr
+
+        Console.Write( element );        // Node
+        Console.Write(" ");
+        if (left != null)
+        {
+           
+            left.PrintPreOrder( );           // Left      
+            
+        }
+
+        if (right != null)
+        { 
+              right.PrintPreOrder( );          // Right     
+        }
+        if (left != null)
+        Console.Write(" )");// s-expr
+
+      
     }
 
 
@@ -63,7 +78,7 @@ public class BinaryNode<AnyType>
             left.PrintPostOrder( );          // Left
         if( right != null )
             right.PrintPostOrder( );          // Right
-        Console.WriteLine( element );          // Node
+        Console.Write(element);          // Node
     }
 
     // Print tree rooted at current node using inorder traversal.

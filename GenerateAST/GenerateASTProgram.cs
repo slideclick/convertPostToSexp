@@ -47,11 +47,14 @@ namespace GenerateAST
         static void Main(string[] args)
         {
             string str;
+            //test:
+            str = "12+34*+";
+            new Evaluator(str).GetPre(); ;
             try
             {
                 //Console.WriteLine( "Enter expressions, one per line:" );
-                //while ((str = Console.ReadLine()) != null)
-                str = "12+";
+                while ((str = Console.ReadLine()) != null)
+                
                 {
                     Evaluator ev = new Evaluator(str);
                     ev.GetPre();
