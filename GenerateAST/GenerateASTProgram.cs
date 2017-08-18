@@ -21,7 +21,7 @@ namespace GenerateAST
             Stack<BinaryTree<char>> opStack = new Stack<BinaryTree<char>>();
             foreach (char c in s)
             {
-                if ((c == '+') || (c == '*'))
+                if ((c == '+') || (c == '*') || (c == '/') || (c == '-'))
                 {
                     BinaryTree<char> op = new BinaryTree<char>();
                     BinaryTree<char> or = opStack.Pop();
@@ -48,7 +48,7 @@ namespace GenerateAST
         {
             string str;
             //test:
-            str = "12+34*+";
+            str = "12+34*+";// 345+*612+/-
             new Evaluator(str).GetPre(); ;
             try
             {
