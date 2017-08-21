@@ -1,4 +1,4 @@
-// postfix.java
+// postfix.java lafore的 746*89+*+5*
 // parses postfix arithmetic expressions
 // to run this program: C>java PostfixApp
 import java.io.*;              // for I/O
