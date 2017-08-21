@@ -48,7 +48,7 @@ namespace GenerateAST
         {
             string str;
             //test:
-            str = "12+34*+";// 345+*612+/-
+            str = "746*89+*+5*";// "598+46**7+*";//"12+34*+";// 345+*612+/-
             new Evaluator(str).GetPre(); ;
             try
             {
