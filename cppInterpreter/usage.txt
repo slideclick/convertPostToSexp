@@ -1,0 +1,18 @@
+The program processes statements of the following format:
+        <id> = <expr>;
+        print <id>
+        status
+        end
+
+Enter a statement: a = 2 ;
+Enter a statement: print a;
+a = 2
+Enter a statement: status
+a = 2
+
+Enter a statement: b=3;
+Enter a statement: c=a+b;
+Enter a statement: status
+c = 5
+b = 3
+a = 2

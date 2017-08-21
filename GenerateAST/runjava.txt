@@ -1,0 +1,4 @@
+java -cp clojure-1.7.0.jar;. clojure.main
+java -cp peter.jar;. silk.Scheme
+java -cp peter.jar;. PostfixApp
+
